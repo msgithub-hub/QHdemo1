@@ -47,27 +47,25 @@
             },
 
             //获取自己所在地址
-            async mapLocation(){
-                let [err, data] = await uni.getLocation();
-                this.latitude1 = data.latitude;
-                this.longitude1 = data.longitude;
-                const marker = {
-                    latitude: this.latitude1,
-                    longitude: this.longitude1,
-                };
-                console.log(this.latitude1,this.longitude1);
-                this.covers.push(marker)
-            },
+          async mapLocation() {
+            let [err, data] = await uni.getLocation()
+            console.log(data)
+            this.latitude1 = data.latitude
+            this.longitude1 = data.longitude
+            const marker = {
+              latitude: this.latitude1,
+              longitude: this.longitude1
+            }
+            // console.log(this.latitude1, this.longitude1)
+            this.covers.push(marker)
+          },
 
             // 预览图片
             previewImage(current){
-                console.log(1);
                 uni.previewImage({
                     current, //预览图片的下标
                     urls:this.previewImages, //预览图片的地址，必须要数组形式，如果不是数组形式就转换成数组形式就可以
-
                 })
-                // console.log(this.previewImages);
             }
         }
     }
@@ -76,8 +74,6 @@
 <style scoped>
     .head {
         width: 100%;
-        /*height: 250rpx;*/
-        /* border-radius: 50%; */
     }
     .words{
         width: 100%;

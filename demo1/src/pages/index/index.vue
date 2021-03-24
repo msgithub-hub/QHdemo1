@@ -1,5 +1,6 @@
 <template>
     <div class="content">
+        就会副教授副教授
         <button :class="{btn:isShow}">{{btnMsg}}</button>
         <!-- 分组成员名单 ul-->
         <ul class="list">
@@ -65,7 +66,7 @@
                     mask: true
                 });
                 let {data} = await getNewsList();
-                console.log(data);
+                // console.log(data);
                 uni.hideLoading();
                 if (data.code === resultCode.SUCCESS.code) {
                     this.photo_li1 = data.data.list || [];
