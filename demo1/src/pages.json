@@ -1,0 +1,74 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/speak/speak",
+      "style": {}
+    },
+
+
+    {
+      "path": "pages/dizhi/dizhi",
+      "style": {"navigationBarTitleText": "案列"}
+    },
+
+    {
+      "path": "pages/listNews/listNews",
+      "style": {}
+    },
+
+
+    {
+      "path": "pages/member/member",
+      "style": {}
+    },
+
+    {
+      "path": "pages/we/we",
+      "style": {}
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app3",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#007AFF",
+    "borderStyle": "black",
+    "backgroundColor": "#F8F8F8",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/component.png",
+        "selectedIconPath": "static/componentHL.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/speak/speak",
+        "iconPath": "static/api.png",
+        "selectedIconPath": "static/apiHL.png",
+        "text": "客说"
+      },
+      {
+        "pagePath": "pages/we/we",
+        "iconPath": "static/extui.png",
+        "selectedIconPath": "static/extuiHL.png",
+        "text": "我们"
+      },
+      {
+        "pagePath": "pages/member/member",
+        "iconPath": "static/template.png",
+        "selectedIconPath": "static/templateHL.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
